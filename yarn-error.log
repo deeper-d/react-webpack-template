@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run dev
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Anaconda;C:\Anaconda\Scripts;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;E:\flutter_sdk\flutter\bin;C:\software\JDK\bin\bin;C:\software\JDK\bin\jre\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python35\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\nodejs;E:\flutter_sdk\flutter\bin;C:\software\JDK\bin;C:\Users\Administrator\Downloads\android\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;C:\Users\Administrator\Downloads\android\android-sdk_r24.4.1-windows\android-sdk-windows\tools;C:\software\JDK\jre\bin;C:\Program Files\Git\bin;C:\Program Files\Git\mingw64\libexec\git-core;;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: E:\excercise\react-cli\react-webpack\package.json: Unexpected token / in JSON at position 281
+      at JSON.parse (<anonymous>)
+      at C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "react-webpack",
+    "version": "1.0.0",
+    "description": "build the application with react and webpack",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "./node_modules/.bin/webpack --config webpack.config.js", //"webpack-dev-server --open",
+      "build": "webpack"
+    },
+    "author": "dan",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.13.14",
+      "@babel/preset-env": "^7.13.12",
+      "babel-loader": "^8.2.2",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-react": "^6.24.1",
+      "clean-webpack-plugin": "^3.0.0",
+      "html-webpack-plugin": "^5.3.1",
+      "webpack": "^5.28.0",
+      "webpack-cli": "^4.6.0",
+      "webpack-dev-server": "^3.11.2"
+    },
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
