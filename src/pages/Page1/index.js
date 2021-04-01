@@ -19,6 +19,10 @@ export default class Index extends React.Component {
 
     onClick = () => {
         this.props.dispatch(increment())
+        let a = 111;
+        let b = 222;
+        var xxx = (c,d) => c*d;
+        console.log(xxx(a,b));
     }
 
     render() {

@@ -4,7 +4,8 @@ const webpack = require('webpack');
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const extractLess = new ExtractTextWebpackPlugin("stylesheets/[name].[chunkhash:8].css");
 const Happypack = require('happypack');
-const happyThreadPool = Happypack.ThreadPool({ size: 5 });
+const os = require('os');
+const happyThreadPool = Happypack.ThreadPool({ size: os.cpus().length }); //Happypack.ThreadPool({ size: 5 });
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
@@ -15,6 +16,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     mode: 'development',
+    devtool: false,
     devServer: {
         hot: true, // 热替换
         contentBase: path.join(__dirname, 'dist'), // server文件的根目录
